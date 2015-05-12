@@ -1,18 +1,18 @@
 {
-  "name": "rowboat",
+  "name": "repack-rows",
   "version": "1.0.0",
   "description": "Rebundle unpacked Browserify bundles with optional mockups",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bevacqua/rowboat.git"
+    "url": "https://github.com/bevacqua/repack-rows.git"
   },
   "author": "Nicolas Bevacqua <nicolasbevacqua@gmail.com> (http://bevacqua.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bevacqua/rowboat/issues"
+    "url": "https://github.com/bevacqua/repack-rows/issues"
   },
-  "main": "rowboat.js",
-  "homepage": "https://github.com/bevacqua/rowboat",
+  "main": "repack.js",
+  "homepage": "https://github.com/bevacqua/repack-rows",
   "dependencies": {
     "lodash": "3.8.0",
     "proxyquire": "1.4.0",

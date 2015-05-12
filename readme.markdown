@@ -1,4 +1,4 @@
-# rowboat
+# repack-rows
 
 > Rebundle unpacked Browserify bundles with optional mockups
 
@@ -7,23 +7,23 @@
 Get it from `npm`
 
 ```bash
-npm install rowboat --save
+npm install repack-rows --save
 ```
 
 # Usage
 
 ```js
 var unpack = require('browser-unpack');
-var rowboat = require('rowboat');
+var repack = require('repack-rows');
 var rows = unpack(bundle);
-var main = rowboat(rows);
+var main = repack(rows);
 ```
 
-# `rowboat(rows, mockups?)`
+# `repack(rows, mockups?)`
 
 Takes the `rows` output from [browser-unpack][1] and leverages [proxyquire][2] to rebundle the fragmented Browserify bundle. No external dependencies are necessary, and you can in fact provide `mockups` for dependencies you need to mock.
 
-This makes `rowboat` ideal in testing scenarios where you need to assert whether a bundle conforms to certain specifications without necessarily having to look at the actual source code that was used to compile said bundle.
+This makes `repack-rows` ideal in testing scenarios where you need to assert whether a bundle conforms to certain specifications without necessarily having to look at the actual source code that was used to compile said bundle.
 
 # License
 
