@@ -5,7 +5,7 @@ var fs = require('fs');
 var tmp = require('tmp');
 var proxyquire = require('proxyquire');
 
-function rowboat (rows, mocks) {
+function repack (rows, mocks) {
   var entry = _.find(rows, 'entry');
   var mockups = _.keys(mocks || {}).reduce(noCall, {});
   return depTree(entry, mockups);
@@ -34,4 +34,4 @@ function rowboat (rows, mocks) {
   }
 }
 
-module.exports = rowboat;
+module.exports = repack;
