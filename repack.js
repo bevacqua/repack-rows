@@ -28,7 +28,7 @@ function repack (rows, mocks) {
 
   function depTree (row, dependencies) {
     var map = _.keys(row.deps).reduce(dep, dependencies);
-    var file = tmp.tmpNameSync();
+    var file = tmp.tmpNameSync({ postfix: '.js' });
     fs.writeFileSync(file, entry.source, 'utf8');
     return proxyquire(file, map);
   }
